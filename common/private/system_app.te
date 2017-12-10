@@ -12,3 +12,7 @@ hal_client_domain(system_app, hal_lineage_touch)
 
 # Allow SetupWizard to set recovery update prop
 set_prop(system_app, recovery_update_prop)
+
+#selinux status
+allow system_app selinuxfs:file r_file_perms;
+
